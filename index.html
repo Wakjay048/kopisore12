@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KOPI SENJA — Specialty Coffee & Daily Comfort</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="container navbar-container">
+            <a href="#home" class="logo">
+                <i data-lucide="coffee"></i>
+                <span>KOPI SENJA</span>
+            </a>
+            
+            <nav class="nav-links" id="navLinks">
+                <a href="#home" class="nav-link active">Beranda</a>
+                <a href="#about" class="nav-link">Tentang</a>
+                <a href="#menu" class="nav-link">Menu</a>
+                <a href="#features" class="nav-link">Keunggulan</a>
+                <a href="#gallery" class="nav-link">Galeri</a>
+                <a href="#location" class="nav-link">Lokasi</a>
+                <a href="#reservation" class="nav-link">Reservasi</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="cart-btn" id="openCartBtn" aria-label="Lihat Keranjang">
+                    <i data-lucide="shopping-bag"></i>
+                    <span class="cart-count" id="cartBadge">0</span>
+                </button>
+                <a href="https://wa.me/6285269911214?text=Halo%20Kopi%20Senja,%20saya%20ingin%20memesan" target="_blank" rel="noopener" class="btn btn-primary btn-sm btn-order-nav">
+                    Pesan Sekarang
+                </a>
+                <button class="hamburger-btn" id="hamburgerBtn" aria-label="Buka Navigasi">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Overlay Mobile Menu -->
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="container hero-container">
+                <div class="hero-content fade-in">
+                    <span class="hero-tag">SPECIALTY COFFEE & DAILY COMFORT</span>
+                    <h1 class="hero-title">Temukan Cerita di Setiap Cangkir</h1>
+                    <p class="hero-desc">Sajian kopi pilihan dari biji kopi lokal terbaik, diseduh oleh barista berpengalaman dalam suasana hangat yang nyaman untuk setiap momen Anda.</p>
+                    <div class="hero-buttons">
+                        <a href="#menu" class="btn btn-primary">Lihat Menu</a>
+                        <a href="#reservation" class="btn btn-outline">Pesan Meja</a>
+                    </div>
+                    <div class="hero-info-grid">
+                        <div class="hero-info-item">
+                            <i data-lucide="clock"></i>
+                            <div>
+                                <strong>Buka Setiap Hari</strong>
+                                <p>08.00 - 22.00 WIB</p>
+                            </div>
+                        </div>
+                        <div class="hero-info-item">
+                            <i data-lucide="map-pin"></i>
+                            <div>
+                                <strong>Lokasi Strategis</strong>
+                                <p>Jl. Senja Utama No. 45</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper fade-in">
+                    <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1000&q=80" alt="Suasana Suasana Kopi Senja" class="hero-img">
+                    <div class="hero-badge">
+                        <i data-lucide="award"></i>
+                        <div>
+                            <strong>100% Arabica</strong>
+                            <span>Single Origin Choices</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Tentang Kami -->
+        <section class="section about" id="about">
+            <div class="container about-container">
+                <div class="about-image-grid fade-in">
+                    <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=800&q=80" alt="Barista Menyeduh Kopi" class="about-img-1">
+                    <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=800&q=80" alt="Interior Kafe Kopi Senja" class="about-img-2">
+                </div>
+                <div class="about-content fade-in">
+                    <span class="section-tag">TENTANG KAMI</span>
+                    <h2 class="section-title">Lebih dari Sekadar Secangkir Kopi</h2>
+                    <p class="about-text">Berdiri sejak tahun 2021, <strong>KOPI SENJA</strong> hadir sebagai ruang ketiga Anda—tempat di antara rumah dan tempat kerja. Kami percaya bahwa kopi bukan hanya sekadar penambah energi, melainkan jembatan percakapan dan sumber inspirasi.</p>
+                    <p class="about-text">Kami bermitra langsung dengan petani kopi lokal dari berbagai daerah di Indonesia untuk menghadirkan biji kopi berkualitas tinggi yang dipanggang dengan presisi.</p>
+                    
+                    <div class="about-features">
+                        <div class="about-feature-item">
+                            <i data-lucide="check-circle-2"></i>
+                            <div>
+                                <h4>Biji Kopi Pilihan</h4>
+                                <p>Disortir secara manual dari hasil panen kopi terbaik nusantara.</p>
+                            </div>
+                        </div>
+                        <div class="about-feature-item">
+                            <i data-lucide="check-circle-2"></i>
+                            <div>
+                                <h4>Suasana Nyaman</h4>
+                                <p>Desain ergonomis, stopkontak melimpah, dan musik yang tenang.</p>
+                            </div>
+                        </div>
+                        <div class="about-feature-item">
+                            <i data-lucide="check-circle-2"></i>
+                            <div>
+                                <h4>Dibuat Sepenuh Hati</h4>
+                                <p>Setiap seduhan diracik dengan takaran dan teknik presisi.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Menu -->
+        <section class="section menu-section" id="menu">
+            <div class="container">
+                <div class="section-header text-center fade-in">
+                    <span class="section-tag">KATALOG MENU</span>
+                    <h2 class="section-title">Nikmati Cita Rasa Terbaik Kami</h2>
+                    <p class="section-desc">Pilih minuman favorit dan camilan lezat untuk menemani momen berharga Anda.</p>
+                </div>
+
+                <div class="menu-categories fade-in">
+                    <button class="category-btn active" data-category="all">Semua Menu</button>
+                    <button class="category-btn" data-category="coffee">Coffee</button>
+                    <button class="category-btn" data-category="non-coffee">Non-Coffee</button>
+                    <button class="category-btn" data-category="pastry">Pastry & Snacks</button>
+                </div>
+
+                <div class="menu-grid" id="menuGrid">
+                    <!-- Menu Items dimasukkan via JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Keunggulan -->
+        <section class="section features" id="features">
+            <div class="container">
+                <div class="section-header text-center fade-in">
+                    <span class="section-tag">FASILITAS & LAYANAN</span>
+                    <h2 class="section-title">Mengapa Memilih KOPI SENJA?</h2>
+                    <p class="section-desc"><em>(Konten contoh dapat disesuaikan oleh pemilik kafe)</em></p>
+                </div>
+
+                <div class="features-grid">
+                    <div class="feature-card fade-in">
+                        <div class="feature-icon"><i data-lucide="bean"></i></div>
+                        <h3>Biji Kopi Specialty</h3>
+                        <p>Menggunakan 100% biji kopi Arabica pilihan dengan profil sangrai segar setiap minggunya.</p>
+                    </div>
+                    <div class="feature-card fade-in">
+                        <div class="feature-icon"><i data-lucide="wifi"></i></div>
+                        <h3>Koneksi Wi-Fi Cepat</h3>
+                        <p>Internet berkecepatan tinggi hingga 100 Mbps dan stopkontak di setiap area tempat duduk.</p>
+                    </div>
+                    <div class="feature-card fade-in">
+                        <div class="feature-icon"><i data-lucide="users"></i></div>
+                        <h3>Area Kerja & Bersantai</h3>
+                        <p>Tersedia Quiet Zone untuk produktivitas dan Community Area untuk berkumpul bersama teman.</p>
+                    </div>
+                    <div class="feature-card fade-in">
+                        <div class="feature-icon"><i data-lucide="sparkles"></i></div>
+                        <h3>Kebersihan & Kenyamanan</h3>
+                        <p>Ruangan ber-AC dengan sirkulasi udara baik serta standar kebersihan tempat tinggi.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Galeri -->
+        <section class="section gallery" id="gallery">
+            <div class="container">
+                <div class="section-header text-center fade-in">
+                    <span class="section-tag">GALERI FOTO</span>
+                    <h2 class="section-title">Suasana & Momen di Kopi Senja</h2>
+                </div>
+
+                <div class="gallery-grid" id="galleryGrid">
+                    <!-- Photos dimasukkan via JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Testimoni -->
+        <section class="section testimonials">
+            <div class="container">
+                <div class="section-header text-center fade-in">
+                    <span class="section-tag">DEMO Ulasan</span>
+                    <h2 class="section-title">KATA MEREKA TENTANG KAMI</h2>
+                    <span class="demo-badge">Contoh testimoni — ganti dengan ulasan pelanggan asli</span>
+                </div>
+
+                <div class="testimonials-grid">
+                    <div class="testimonial-card fade-in">
+                        <div class="stars">★★★★★</div>
+                        <p>"Tempat favorit saya untuk WFC (Work from Cafe). Kopinya sangat konsisten dan Caramel Macchiato-nya juara!"</p>
+                        <div class="user-info">
+                            <strong>Rian Ardianto</strong>
+                            <span>Software Engineer</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-card fade-in">
+                        <div class="stars">★★★★★</div>
+                        <p>"Suasana sore hari di Kopi Senja hangat sekali. Butter Croissant-nya renyah dan cocok dipadukan dengan Cafe Latte."</p>
+                        <div class="user-info">
+                            <strong>Siti Rahma</strong>
+                            <span>Graphic Designer</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-card fade-in">
+                        <div class="stars">★★★★★</div>
+                        <p>"Baristanya ramah-ramah dan sangat paham rekomendasi kopi sesuai selera. Sangat direkomendasikan!"</p>
+                        <div class="user-info">
+                            <strong>Budi Santoso</strong>
+                            <span>Freelancer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Lokasi -->
+        <section class="section location" id="location">
+            <div class="container">
+                <div class="location-wrapper">
+                    <div class="location-info fade-in">
+                        <span class="section-tag">LOKASI & JAM OPERASIONAL</span>
+                        <h2 class="section-title">Kunjungi Kedai Kami</h2>
+                        <div class="location-details">
+                            <div class="location-item">
+                                <i data-lucide="map-pin"></i>
+                                <div>
+                                    <strong>Alamat (Contoh):</strong>
+                                    <p>Jl. Senja Utama No. 45, Kecamatan Kebayoran, Kota Jakarta Selatan, DKI Jakarta 12150</p>
+                                    <small class="note-text">*Ubah alamat di atas sesuai lokasi sebenarnya kafe Anda.</small>
+                                </div>
+                            </div>
+                            <div class="location-item">
+                                <i data-lucide="clock"></i>
+                                <div>
+                                    <strong>Jam Operasional:</strong>
+                                    <p>Senin – Minggu: 08.00 – 22.00 WIB</p>
+                                </div>
+                            </div>
+                            <div class="location-item">
+                                <i data-lucide="phone"></i>
+                                <div>
+                                    <strong>WhatsApp:</strong>
+                                    <p>+62 812-3456-7890</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="https://maps.google.com" target="_blank" rel="noopener" class="btn btn-primary">
+                            <i data-lucide="navigation"></i> Buka Google Maps
+                        </a>
+                    </div>
+                    <div class="location-map fade-in">
+                        <!-- Embed Google Maps Placeholder -->
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126920.28312520623!2d106.75886737562098!3d-6.22972802525032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e945e34b9d%3A0x5371bf0fdad786a2!2sJakarta%20South%2C%20South%20Jakarta%20City%2C%20Jakarta!5e0!3m2!1sen!2sid!4v1700000000000!5m2!1sen!2sid" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Peta Lokasi Kafe">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Reservasi -->
+        <section class="section reservation" id="reservation">
+            <div class="container">
+                <div class="reservation-card fade-in">
+                    <div class="section-header text-center">
+                        <span class="section-tag">RESERVASI MEJA</span>
+                        <h2 class="section-title">Amankan Tempat Anda</h2>
+                        <p class="section-desc">Isi formulir berikut untuk melakukan pemesanan meja. Informasi reservasi akan dikirimkan langsung ke WhatsApp kami.</p>
+                    </div>
+
+                    <form id="reservationForm" class="reservation-form" novalidate>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="resName">Nama Lengkap *</label>
+                                <input type="text" id="resName" class="form-control" placeholder="Contoh: Andi Pratama" required>
+                                <span class="error-msg" id="nameError">Nama harus diisi</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="resPhone">Nomor WhatsApp *</label>
+                                <input type="tel" id="resPhone" class="form-control" placeholder="Contoh: 081234567890" required>
+                                <span class="error-msg" id="phoneError">Masukkan nomor telepon yang valid (min. 10 digit)</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="resDate">Tanggal Kunjungan *</label>
+                                <input type="date" id="resDate" class="form-control" required>
+                                <span class="error-msg" id="dateError">Tanggal tidak boleh di masa lalu</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="resTime">Waktu Kunjungan *</label>
+                                <input type="time" id="resTime" class="form-control" required>
+                                <span class="error-msg" id="timeError">Waktu kunjungan harus diisi</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="resGuests">Jumlah Tamu *</label>
+                                <select id="resGuests" class="form-control" required>
+                                    <option value="">Pilih Jumlah Tamu</option>
+                                    <option value="1 Person">1 Orang</option>
+                                    <option value="2 People">2 Orang</option>
+                                    <option value="3-4 People">3 - 4 Orang</option>
+                                    <option value="5+ People">Lebih dari 5 Orang</option>
+                                </select>
+                                <span class="error-msg" id="guestsError">Silakan pilih jumlah tamu</span>
+                            </div>
+
+                            <div class="form-group full-width">
+                                <label for="resNotes">Catatan Tambahan (Opsional)</label>
+                                <textarea id="resNotes" class="form-control" rows="3" placeholder="Contoh: Minta area non-smoking / tempat duduk dekat jendela"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-footer">
+                            <button type="submit" class="btn btn-primary btn-block">
+                                <i data-lucide="send"></i> Kirim Reservasi via WhatsApp
+                            </button>
+                            <small class="form-disclaimer">*Reservasi baru akan dikonfirmasi setelah pihak Kopi Senja membalas pesan Anda di WhatsApp.</small>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-col">
+                <a href="#home" class="logo footer-logo">
+                    <i data-lucide="coffee"></i>
+                    <span>KOPI SENJA</span>
+                </a>
+                <p class="footer-desc">Menyajikan kopi kualitas premium dengan suasana hangat dan ramah untuk menemani setiap cerita Anda.</p>
+                <div class="social-links">
+                    <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                    <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-title">Navigasi Cepat</h4>
+                <ul class="footer-links">
+                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="#about">Tentang Kami</a></li>
+                    <li><a href="#menu">Katalog Menu</a></li>
+                    <li><a href="#gallery">Galeri Foto</a></li>
+                    <li><a href="#reservation">Reservasi Meja</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-title">Jam Buka</h4>
+                <p class="footer-text">Senin - Jumat: 08.00 - 22.00 WIB</p>
+                <p class="footer-text">Sabtu - Minggu: 08.00 - 23.00 WIB</p>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-title">Kontak</h4>
+                <p class="footer-text"><i data-lucide="map-pin"></i> Jl. Senja Utama No. 45, Jakarta</p>
+                <p class="footer-text"><i data-lucide="phone"></i> +62 812-3456-7890</p>
+                <p class="footer-text"><i data-lucide="mail"></i> halo@kopisenja.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container text-center">
+                <p>&copy; <span id="currentYear"></span> KOPI SENJA. Hak Cipta Dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+<!-- Cart Drawer Modal -->
+    <div class="cart-drawer" id="cartDrawer">
+        <div class="cart-header">
+            <h3><i data-lucide="shopping-bag"></i> Pesanan Sementara</h3>
+            <button class="close-btn" id="closeCartBtn" aria-label="Tutup Keranjang">&times;</button>
+        </div>
+        <div class="cart-body" id="cartBody">
+            <!-- Items rendered via JavaScript -->
+        </div>
+        <div class="cart-footer">
+            <!-- Input Nama Pemesan Baru -->
+            <div class="cart-name-group" style="margin-bottom: 14px;">
+                <label for="customerName" style="display: block; font-size: 0.85rem; font-weight: 500; margin-bottom: 4px;">Nama Pemesan *</label>
+                <input type="text" id="customerName" class="form-control" placeholder="Contoh: Budi Santoso" style="width: 100%; padding: 10px 14px; font-size: 0.9rem;" required>
+                <small id="cartNameError" style="color: #ef4444; font-size: 0.75rem; display: none; margin-top: 2px;">Nama pemesan harus diisi</small>
+            </div>
+
+            <div class="cart-total">
+                <span>Total:</span>
+                <strong id="cartSubtotal">Rp 0</strong>
+            </div>
+            <button class="btn btn-primary btn-block" id="checkoutBtn" disabled>
+                Lanjutkan ke WhatsApp
+            </button>
+        </div>
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox-modal" id="lightboxModal" role="dialog" aria-hidden="true">
+        <button class="lightbox-close" id="lightboxClose" aria-label="Tutup Foto">&times;</button>
+        <div class="lightbox-content">
+            <img id="lightboxImg" src="" alt="Foto Galeri">
+            <p id="lightboxCaption" class="lightbox-caption"></p>
+        </div>
+    </div>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/6285269911214?text=Halo%20Kopi%20Senja,%20saya%20ingin%20bertanya" target="_blank" rel="noopener" class="floating-wa" aria-label="Chat via WhatsApp">
+        <i data-lucide="message-circle"></i>
+    </a>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
