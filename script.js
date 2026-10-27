@@ -294,7 +294,6 @@ function setupCartEvents() {
         // Format pesan sesuai permintaan
         let text = `*Nama Pemesan = ${customerName}*\n\n`;
         text += `Halo Kopi Senja, saya ingin memesan:\n`;
-        text += `Daftar Pesanan:\n`;
 
         cart.forEach((item, index) => {
             text += `${index + 1}. ${item.name} x${item.qty} (${formatRupiah(item.price * item.qty)})\n`;
