@@ -303,7 +303,7 @@ function setupCartEvents() {
         const total = cart.reduce((sum, item) => sum + (item.price * item.qty), 0);
         text += `\nTotal Subtotal: ${formatRupiah(total)}`;
 
-        const waUrl = `https://wa.me/6285788538334?text=${encodeURIComponent(text)}`;
+        const waUrl = `https://wa.me/6285269911214?text=${encodeURIComponent(text)}`;
         window.open(waUrl, '_blank');
     };
 
@@ -454,7 +454,7 @@ function setupReservationForm() {
                          (notes ? `- Catatan: ${notes}\n` : '') +
                          `\nMohon konfirmasi ketersediaan meja. Terima kasih!`;
 
-            const waUrl = `https://wa.me/6281234567890?text=${encodeURIComponent(text)}`;
+            const waUrl = `https://wa.me/6285269911214?text=${encodeURIComponent(text)}`;
             window.open(waUrl, '_blank');
             form.reset();
         }
